@@ -15,6 +15,12 @@ class Lantern {
       .normalize("NFD")
       .replace(/[\u0300-\u036f]/g, "")
       .split(' ');
+
+    this.phrase.map((i) => {
+      let i += 1;
+
+
+    })
   }
 
   translate() {
@@ -25,6 +31,108 @@ class Lantern {
       this[f].call(this, word, w);
     });
   }
+
+  hand() {
+
+  }
+
+  field() {
+
+  }
+
+  water() {
+
+  }
+
+  mouth() {
+
+  }
+
+  twenty() {
+
+  }
+
+  predict() {
+
+  }
+
+  mountain() {
+
+  }
+
+  daggerAxe() {
+
+  }
+
+  people() {
+
+  }
+
+  heart() {
+
+  }
+
+  day() {
+
+  }
+
+  corpse() {
+
+  }
+
+  wood() {
+
+  }
+
+  fire() {
+
+  }
+
+  earth() {
+
+  }
+
+  bamboo() {
+
+  }
+
+  ten() {
+
+  }
+
+  big() {
+
+  }
+
+  middle() {
+
+  }
+
+  disaster() {
+
+  }
+
+  gold() {
+
+  }
+
+  female() {
+
+  }
+
+  moon() {
+
+  }
+
+  bow() {
+
+  }
+
+  one() {
+
+  }
+
+
 
 }
 
