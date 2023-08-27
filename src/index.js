@@ -766,103 +766,103 @@ class Lantern {
 
     switch(this.phrase) {
       case 'hand':
-        return '';
+        return 'gi';
         break;
 
       case 'field':
-        return '';
+        return 'ji';
         break;
 
       case 'water':
-        return '';
+        return 'pi';
         break;
 
       case 'mouth':
-        return '';
+        return 'fu';
         break;
 
       case 'twenty':
-        return '';
+        return 'zu';
         break;
 
       case 'predict':
-        return '';
+        return 'ni';
         break;
 
       case 'mountain':
-        return '';
+        return 'wa';
         break;
 
       case 'daggerAxe':
-        return '';
+        return 'ri';
         break;
 
       case 'people':
-        return '';
+        return 'mi';
         break;
 
       case 'heart':
-        return '';
+        return 'su';
         break;
 
       case 'day':
-        return '';
+        return 'to';
         break;
 
       case 'corpse':
-        return '';
+        return 'ro';
         break;
 
       case 'wood':
-        return '';
+        return 'do';
         break;
 
       case 'fire':
-        return '';
+        return 'po';
         break;
 
       case 'earth':
-        return '';
+        return 'se';
         break;
 
       case 'bamboo':
-        return '';
+        return 'yo';
         break;
 
       case 'ten':
-        return '';
+        return 'ze';
         break;
 
       case 'big':
-        return '';
+        return 'ro';
         break;
 
       case 'middle':
-        return '';
+        return 'so';
         break;
 
       case 'disaster':
-        return '';
+        return 'do';
         break;
 
       case 'gold':
-        return '';
+        return 'fu';
         break;
 
       case 'female':
-        return '';
+        return 'e';
         break;
 
       case 'moon':
-        return '';
+        return 'ne';
         break;
 
       case 'bow':
-        return '';
+        return 'i';
         break;
 
       case 'one':
-        return '';
+        return 'dji';
         break;
     }
   }
