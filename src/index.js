@@ -1937,103 +1937,103 @@ class Lantern {
 
     switch(this.phrase) {
       case 'hand':
-        return '';
+        return 'pa';
         break;
 
       case 'field':
-        return '';
+        return 'mu';
         break;
 
       case 'water':
-        return '';
+        return 'bu';
         break;
 
       case 'mouth':
-        return '';
+        return 'ro';
         break;
 
       case 'twenty':
-        return '';
+        return 'e';
         break;
 
       case 'predict':
-        return '';
+        return 'mo';
         break;
 
       case 'mountain':
-        return '';
+        return 'bu';
         break;
 
       case 'daggerAxe':
-        return '';
+        return 'do';
         break;
 
       case 'people':
-        return '';
+        return 'ge';
         break;
 
       case 'heart':
-        return '';
+        return 'zo';
         break;
 
       case 'day':
-        return '';
+        return 'su';
         break;
 
       case 'corpse':
-        return '';
+        return 'ge';
         break;
 
       case 'wood':
-        return '';
+        return 'fu';
         break;
 
       case 'fire':
-        return '';
+        return 'ku';
         break;
 
       case 'earth':
-        return '';
+        return 'pu';
         break;
 
       case 'bamboo':
-        return '';
+        return 'tsu';
         break;
 
       case 'ten':
-        return '';
+        return 'zo';
         break;
 
       case 'big':
-        return '';
+        return 'pi';
         break;
 
       case 'middle':
-        return '';
+        return 'u';
         break;
 
       case 'disaster':
-        return '';
+        return 'do';
         break;
 
       case 'gold':
-        return '';
+        return 'ne';
         break;
 
       case 'female':
-        return '';
+        return 'wo';
         break;
 
       case 'moon':
-        return '';
+        return 'pi';
         break;
 
       case 'bow':
-        return '';
+        return 'go';
         break;
 
       case 'one':
-        return '';
+        return 'ho';
         break;
 
       default:
