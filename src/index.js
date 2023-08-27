@@ -2046,103 +2046,103 @@ class Lantern {
 
     switch(this.phrase) {
       case 'hand':
-        return '';
+        return 'yo';
         break;
 
       case 'field':
-        return '';
+        return 'so';
         break;
 
       case 'water':
-        return '';
+        return 'go';
         break;
 
       case 'mouth':
-        return '';
+        return 'po';
         break;
 
       case 'twenty':
-        return '';
+        return 'do';
         break;
 
       case 'predict':
-        return '';
+        return 'pi';
         break;
 
       case 'mountain':
-        return '';
+        return 'ta';
         break;
 
       case 'daggerAxe':
-        return '';
+        return 'bi';
         break;
 
       case 'people':
-        return '';
+        return 'zu';
         break;
 
       case 'heart':
-        return '';
+        return 'ke';
         break;
 
       case 'day':
-        return '';
+        return 'ne';
         break;
 
       case 'corpse':
-        return '';
+        return 'ro';
         break;
 
       case 'wood':
-        return '';
+        return 'de';
         break;
 
       case 'fire':
-        return '';
+        return 'zo';
         break;
 
       case 'earth':
-        return '';
+        return 'tsu';
         break;
 
       case 'bamboo':
-        return '';
+        return 'hi';
         break;
 
       case 'ten':
-        return '';
+        return 'to';
         break;
 
       case 'big':
-        return '';
+        return 'nu';
         break;
 
       case 'middle':
-        return '';
+        return 'wa';
         break;
 
       case 'disaster':
-        return '';
+        return 'wi';
         break;
 
       case 'gold':
-        return '';
+        return 'gi';
         break;
 
       case 'female':
-        return '';
+        return 'wi';
         break;
 
       case 'moon':
-        return '';
+        return 'ba';
         break;
 
       case 'bow':
-        return '';
+        return 'mu';
         break;
 
       case 'one':
-        return '';
+        return 'wa';
         break;
     }
   }
