@@ -1402,103 +1402,103 @@ class Lantern {
 
     switch(this.phrase) {
       case 'hand':
-        return '';
+        return 'he';
         break;
 
       case 'field':
-        return '';
+        return 'so';
         break;
 
       case 'water':
-        return '';
+        return 'o';
         break;
 
       case 'mouth':
-        return '';
+        return 'gu';
         break;
 
       case 'twenty':
-        return '';
+        return 'u';
         break;
 
       case 'predict':
-        return '';
+        return 'pe';
         break;
 
       case 'mountain':
-        return '';
+        return 'dzu';
         break;
 
       case 'daggerAxe':
-        return '';
+        return 'so';
         break;
 
       case 'people':
-        return '';
+        return 'wo';
         break;
 
       case 'heart':
-        return '';
+        return 'do';
         break;
 
       case 'day':
-        return '';
+        return 'po';
         break;
 
       case 'corpse':
-        return '';
+        return 'po';
         break;
 
       case 'wood':
-        return '';
+        return 'wo';
         break;
 
       case 'fire':
-        return '';
+        return 'ho';
         break;
 
       case 'earth':
-        return '';
+        return 'bu';
         break;
 
       case 'bamboo':
-        return '';
+        return 'se';
         break;
 
       case 'ten':
-        return '';
+        return 'to';
         break;
 
       case 'big':
-        return '';
+        return 'ge';
         break;
 
       case 'middle':
-        return '';
+        return 'mu';
         break;
 
       case 'disaster':
-        return '';
+        return 'o';
         break;
 
       case 'gold':
-        return '';
+        return 'ho';
         break;
 
       case 'female':
-        return '';
+        return 'ze';
         break;
 
       case 'moon':
-        return '';
+        return 'bu';
         break;
 
       case 'bow':
-        return '';
+        return 'ke';
         break;
 
       case 'one':
-        return '';
+        return 'po';
         break;
     }
   }
@@ -1508,103 +1508,103 @@ class Lantern {
 
     switch(this.phrase) {
       case 'hand':
-        return '';
+        return 'yu';
         break;
 
       case 'field':
-        return '';
+        return 'ro';
         break;
 
       case 'water':
-        return '';
+        return 'ko';
         break;
 
       case 'mouth':
-        return '';
+        return 'mo';
         break;
 
       case 'twenty':
-        return '';
+        return 'ro';
         break;
 
       case 'predict':
-        return '';
+        return 'po';
         break;
 
       case 'mountain':
-        return '';
+        return 'go';
         break;
 
       case 'daggerAxe':
-        return '';
+        return 'to';
         break;
 
       case 'people':
-        return '';
+        return 'ke';
         break;
 
       case 'heart':
-        return '';
+        return 'dzu';
         break;
 
       case 'day':
-        return '';
+        return 'o';
         break;
 
       case 'corpse':
-        return '';
+        return 'ko';
         break;
 
       case 'wood':
-        return '';
+        return 're';
         break;
 
       case 'fire':
-        return '';
+        return 'go';
         break;
 
       case 'earth':
-        return '';
+        return 'fu';
         break;
 
       case 'bamboo':
-        return '';
+        return 'ko';
         break;
 
       case 'ten':
-        return '';
+        return 'wo';
         break;
 
       case 'big':
-        return '';
+        return 'ro';
         break;
 
       case 'middle':
-        return '';
+        return 'ge';
         break;
 
       case 'disaster':
-        return '';
+        return 'zu';
         break;
 
       case 'gold':
-        return '';
+        return 'ke';
         break;
 
       case 'female':
-        return '';
+        return 'ro';
         break;
 
       case 'moon':
-        return '';
+        return 'su';
         break;
 
       case 'bow':
-        return '';
+        return 'me';
         break;
 
       case 'one':
-        return '';
+        return 'mo';
         break;
     }
   }
