@@ -448,103 +448,103 @@ class Lantern {
 
     switch(this.phrase) {
       case 'hand':
-        return '';
+        return 'e';
         break;
 
       case 'field':
-        return '';
+        return 'to';
         break;
 
       case 'water':
-        return '';
+        return 'ro';
         break;
 
       case 'mouth':
-        return '';
+        return 'po';
         break;
 
       case 'twenty':
-        return '';
+        return 'to';
         break;
 
       case 'predict':
-        return '';
+        return 'yo';
         break;
 
       case 'mountain':
-        return '';
+        return 'ne';
         break;
 
       case 'daggerAxe':
-        return '';
+        return 'e';
         break;
 
       case 'people':
-        return '';
+        return 'bu';
         break;
 
       case 'heart':
-        return '';
+        return 'se';
         break;
 
       case 'day':
-        return '';
+        return 'ne';
         break;
 
       case 'corpse':
-        return '';
+        return 'ze';
         break;
 
       case 'wood':
-        return '';
+        return 'mo';
         break;
 
       case 'fire':
-        return '';
+        return 'so';
         break;
 
       case 'earth':
-        return '';
+        return 'mo';
         break;
 
       case 'bamboo':
-        return '';
+        return 'ho';
         break;
 
       case 'ten':
-        return '';
+        return 'ko';
         break;
 
       case 'big':
-        return '';
+        return 'chi';
         break;
 
       case 'middle':
-        return '';
+        return 'bi';
         break;
 
       case 'disaster':
-        return '';
+        return 'ji';
         break;
 
       case 'gold':
-        return '';
+        return 'bi';
         break;
 
       case 'female':
-        return '';
+        return 'wi';
         break;
 
       case 'moon':
-        return '';
+        return 'nu';
         break;
 
       case 'bow':
-        return '';
+        return 'do';
         break;
 
       case 'one':
-        return '';
+        return 'ko';
         break;
     }
   }
