@@ -1819,113 +1819,116 @@ class Lantern {
         return 'zo';
         break;
       
-      default: 'po';
+      default: 
+        return 'po';
     }
   }
 
   big() { //Da
-    // default: ma
 
     switch(this.phrase) {
       case 'hand':
-        return '';
+        return 'i';
         break;
 
       case 'field':
-        return '';
+        return 'ni';
         break;
 
       case 'water':
-        return '';
+        return 'gu';
         break;
 
       case 'mouth':
-        return '';
+        return 'ha';
         break;
 
       case 'twenty':
-        return '';
+        return 'ka';
         break;
 
       case 'predict':
-        return '';
+        return 'nu';
         break;
 
       case 'mountain':
-        return '';
+        return 'ra';
         break;
 
       case 'daggerAxe':
-        return '';
+        return 'pi';
         break;
 
       case 'people':
-        return '';
+        return 'fu';
         break;
 
       case 'heart':
-        return '';
+        return 'gu';
         break;
 
       case 'day':
-        return '';
+        return 'fu';
         break;
 
       case 'corpse':
-        return '';
+        return 'mi';
         break;
 
       case 'wood':
-        return '';
+        return 'ba';
         break;
 
       case 'fire':
-        return '';
+        return 'se';
         break;
 
       case 'earth':
-        return '';
+        return 'e';
         break;
 
       case 'bamboo':
-        return '';
+        return 'mo';
         break;
 
       case 'ten':
-        return '';
+        return 'gi';
         break;
 
       case 'big':
-        return '';
+        return 'se';
         break;
 
       case 'middle':
-        return '';
+        return 'ko';
         break;
 
       case 'disaster':
-        return '';
+        return 'ho';
         break;
 
       case 'gold':
-        return '';
+        return 'po';
         break;
 
       case 'female':
-        return '';
+        return 'ke';
         break;
 
       case 'moon':
-        return '';
+        return 'ku';
         break;
 
       case 'bow':
-        return '';
+        return 'po';
         break;
 
       case 'one':
-        return '';
+        return 'gu';
         break;
+
+      default: 
+        return 'a';
     }
   }
 
@@ -2032,6 +2035,9 @@ class Lantern {
       case 'one':
         return '';
         break;
+
+      default:
+        return 'su';
     }
   }
 
