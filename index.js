@@ -8,7 +8,7 @@ program
   .version(version);
 
 program.command('parse')
-  .description('Parse a cangjie keyboard input into hiragana')
+  .description('Parse a input into cangie and then to hiragana')
   .argument('<string>', 'string to parse')
   .option('-d, --debug', 'debug')
   .action((s, { debug }) => {

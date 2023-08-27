@@ -12,118 +12,2661 @@ class Lantern {
   }
 
   parse() {
-    this.phrase = new PepperSpray(this.phrase);
-
-    this.phrase
+    this.phrase = this.phrase.split(/[.,!?]/gm);
   }
 
   translate() {
-    this.phrase.forEach((word) => {
-      let w = Object.values(word);
-      let f = w[0];
-      
-      this[f].call(this, word, w);
-    });
+
   }
 
   hand() { //Shou
     // default: (old mc donald had a fart, fart fart fart fart fart)
+
+    switch(this.phrase) {
+      case 'hand':
+        return 'ki';
+        break;
+
+      case 'field':
+        return 'zo';
+        break;
+
+      case 'water':
+        return 'ge';
+        break;
+
+      case 'mouth':
+        return 'reactor';
+        break;
+
+      case 'twenty':
+        return 'mu';
+        break;
+
+      case 'predict':
+        return 'mi';
+        break;
+
+      case 'mountain':
+        return 'ka';
+        break;
+
+      case 'daggerAxe':
+        return 'tsu';
+        break;
+
+      case 'people':
+        return 'ro';
+        break;
+
+      case 'heart':
+        return 'do';
+        break;
+
+      case 'day':
+        return 'ko';
+        break;
+
+      case 'corpse':
+        return 'so';
+        break;
+
+      case 'wood':
+        return 'to';
+        break;
+
+      case 'fire':
+        return 'su';
+        break;
+
+      case 'earth':
+        return 'mo';
+        break;
+
+      case 'bamboo':
+        return 'he';
+        break;
+
+      case 'ten':
+        return 'ge';
+        break;
+
+      case 'big':
+        return 'chi';
+        break;
+
+      case 'middle':
+        return 'ze';
+        break;
+
+      case 'disaster':
+        return 'gi';
+        break;
+
+      case 'gold':
+        return 'ji';
+        break;
+
+      case 'female':
+        return 'ki';
+        break;
+
+      case 'moon':
+        return 'sa';
+        break;
+
+      case 'bow':
+        return 'ro';
+        break;
+
+      case 'one':
+        return 're';
+        break;
+    }
   }
 
   field() { //Tian
     // default: eye
+
+    switch(this.phrase) {
+      case 'hand':
+        return '';
+        break;
+
+      case 'field':
+        return '';
+        break;
+
+      case 'water':
+        return '';
+        break;
+
+      case 'mouth':
+        return '';
+        break;
+
+      case 'twenty':
+        return '';
+        break;
+
+      case 'predict':
+        return '';
+        break;
+
+      case 'mountain':
+        return '';
+        break;
+
+      case 'daggerAxe':
+        return '';
+        break;
+
+      case 'people':
+        return '';
+        break;
+
+      case 'heart':
+        return '';
+        break;
+
+      case 'day':
+        return '';
+        break;
+
+      case 'corpse':
+        return '';
+        break;
+
+      case 'wood':
+        return '';
+        break;
+
+      case 'fire':
+        return '';
+        break;
+
+      case 'earth':
+        return '';
+        break;
+
+      case 'bamboo':
+        return '';
+        break;
+
+      case 'ten':
+        return '';
+        break;
+
+      case 'big':
+        return '';
+        break;
+
+      case 'middle':
+        return '';
+        break;
+
+      case 'disaster':
+        return '';
+        break;
+
+      case 'gold':
+        return '';
+        break;
+
+      case 'female':
+        return '';
+        break;
+
+      case 'moon':
+        return '';
+        break;
+
+      case 'bow':
+        return '';
+        break;
+
+      case 'one':
+        return '';
+        break;
+    }
   }
 
   water() { //Shui
     // default: too
+
+    switch(this.phrase) {
+      case 'hand':
+        return '';
+        break;
+
+      case 'field':
+        return '';
+        break;
+
+      case 'water':
+        return '';
+        break;
+
+      case 'mouth':
+        return '';
+        break;
+
+      case 'twenty':
+        return '';
+        break;
+
+      case 'predict':
+        return '';
+        break;
+
+      case 'mountain':
+        return '';
+        break;
+
+      case 'daggerAxe':
+        return '';
+        break;
+
+      case 'people':
+        return '';
+        break;
+
+      case 'heart':
+        return '';
+        break;
+
+      case 'day':
+        return '';
+        break;
+
+      case 'corpse':
+        return '';
+        break;
+
+      case 'wood':
+        return '';
+        break;
+
+      case 'fire':
+        return '';
+        break;
+
+      case 'earth':
+        return '';
+        break;
+
+      case 'bamboo':
+        return '';
+        break;
+
+      case 'ten':
+        return '';
+        break;
+
+      case 'big':
+        return '';
+        break;
+
+      case 'middle':
+        return '';
+        break;
+
+      case 'disaster':
+        return '';
+        break;
+
+      case 'gold':
+        return '';
+        break;
+
+      case 'female':
+        return '';
+        break;
+
+      case 'moon':
+        return '';
+        break;
+
+      case 'bow':
+        return '';
+        break;
+
+      case 'one':
+        return '';
+        break;
+    }
   }
 
   mouth() { //Kou
     // default: vinegar
+
+    switch(this.phrase) {
+      case 'hand':
+        return '';
+        break;
+
+      case 'field':
+        return '';
+        break;
+
+      case 'water':
+        return '';
+        break;
+
+      case 'mouth':
+        return '';
+        break;
+
+      case 'twenty':
+        return '';
+        break;
+
+      case 'predict':
+        return '';
+        break;
+
+      case 'mountain':
+        return '';
+        break;
+
+      case 'daggerAxe':
+        return '';
+        break;
+
+      case 'people':
+        return '';
+        break;
+
+      case 'heart':
+        return '';
+        break;
+
+      case 'day':
+        return '';
+        break;
+
+      case 'corpse':
+        return '';
+        break;
+
+      case 'wood':
+        return '';
+        break;
+
+      case 'fire':
+        return '';
+        break;
+
+      case 'earth':
+        return '';
+        break;
+
+      case 'bamboo':
+        return '';
+        break;
+
+      case 'ten':
+        return '';
+        break;
+
+      case 'big':
+        return '';
+        break;
+
+      case 'middle':
+        return '';
+        break;
+
+      case 'disaster':
+        return '';
+        break;
+
+      case 'gold':
+        return '';
+        break;
+
+      case 'female':
+        return '';
+        break;
+
+      case 'moon':
+        return '';
+        break;
+
+      case 'bow':
+        return '';
+        break;
+
+      case 'one':
+        return '';
+        break;
+    }
   }
 
   twenty() { //Nian
     // default: hand
+
+    switch(this.phrase) {
+      case 'hand':
+        return '';
+        break;
+
+      case 'field':
+        return '';
+        break;
+
+      case 'water':
+        return '';
+        break;
+
+      case 'mouth':
+        return '';
+        break;
+
+      case 'twenty':
+        return '';
+        break;
+
+      case 'predict':
+        return '';
+        break;
+
+      case 'mountain':
+        return '';
+        break;
+
+      case 'daggerAxe':
+        return '';
+        break;
+
+      case 'people':
+        return '';
+        break;
+
+      case 'heart':
+        return '';
+        break;
+
+      case 'day':
+        return '';
+        break;
+
+      case 'corpse':
+        return '';
+        break;
+
+      case 'wood':
+        return '';
+        break;
+
+      case 'fire':
+        return '';
+        break;
+
+      case 'earth':
+        return '';
+        break;
+
+      case 'bamboo':
+        return '';
+        break;
+
+      case 'ten':
+        return '';
+        break;
+
+      case 'big':
+        return '';
+        break;
+
+      case 'middle':
+        return '';
+        break;
+
+      case 'disaster':
+        return '';
+        break;
+
+      case 'gold':
+        return '';
+        break;
+
+      case 'female':
+        return '';
+        break;
+
+      case 'moon':
+        return '';
+        break;
+
+      case 'bow':
+        return '';
+        break;
+
+      case 'one':
+        return '';
+        break;
+    }
   }
 
   predict() { //Bo
     // default: in
+
+    switch(this.phrase) {
+      case 'hand':
+        return '';
+        break;
+
+      case 'field':
+        return '';
+        break;
+
+      case 'water':
+        return '';
+        break;
+
+      case 'mouth':
+        return '';
+        break;
+
+      case 'twenty':
+        return '';
+        break;
+
+      case 'predict':
+        return '';
+        break;
+
+      case 'mountain':
+        return '';
+        break;
+
+      case 'daggerAxe':
+        return '';
+        break;
+
+      case 'people':
+        return '';
+        break;
+
+      case 'heart':
+        return '';
+        break;
+
+      case 'day':
+        return '';
+        break;
+
+      case 'corpse':
+        return '';
+        break;
+
+      case 'wood':
+        return '';
+        break;
+
+      case 'fire':
+        return '';
+        break;
+
+      case 'earth':
+        return '';
+        break;
+
+      case 'bamboo':
+        return '';
+        break;
+
+      case 'ten':
+        return '';
+        break;
+
+      case 'big':
+        return '';
+        break;
+
+      case 'middle':
+        return '';
+        break;
+
+      case 'disaster':
+        return '';
+        break;
+
+      case 'gold':
+        return '';
+        break;
+
+      case 'female':
+        return '';
+        break;
+
+      case 'moon':
+        return '';
+        break;
+
+      case 'bow':
+        return '';
+        break;
+
+      case 'one':
+        return '';
+        break;
+    }
   }
 
   mountain() { //Shan
     // default: zo
+
+    switch(this.phrase) {
+      case 'hand':
+        return '';
+        break;
+
+      case 'field':
+        return '';
+        break;
+
+      case 'water':
+        return '';
+        break;
+
+      case 'mouth':
+        return '';
+        break;
+
+      case 'twenty':
+        return '';
+        break;
+
+      case 'predict':
+        return '';
+        break;
+
+      case 'mountain':
+        return '';
+        break;
+
+      case 'daggerAxe':
+        return '';
+        break;
+
+      case 'people':
+        return '';
+        break;
+
+      case 'heart':
+        return '';
+        break;
+
+      case 'day':
+        return '';
+        break;
+
+      case 'corpse':
+        return '';
+        break;
+
+      case 'wood':
+        return '';
+        break;
+
+      case 'fire':
+        return '';
+        break;
+
+      case 'earth':
+        return '';
+        break;
+
+      case 'bamboo':
+        return '';
+        break;
+
+      case 'ten':
+        return '';
+        break;
+
+      case 'big':
+        return '';
+        break;
+
+      case 'middle':
+        return '';
+        break;
+
+      case 'disaster':
+        return '';
+        break;
+
+      case 'gold':
+        return '';
+        break;
+
+      case 'female':
+        return '';
+        break;
+
+      case 'moon':
+        return '';
+        break;
+
+      case 'bow':
+        return '';
+        break;
+
+      case 'one':
+        return '';
+        break;
+    }
   }
 
   daggerAxe() { //Ge
     // default: degree
+
+    switch(this.phrase) {
+      case 'hand':
+        return '';
+        break;
+
+      case 'field':
+        return '';
+        break;
+
+      case 'water':
+        return '';
+        break;
+
+      case 'mouth':
+        return '';
+        break;
+
+      case 'twenty':
+        return '';
+        break;
+
+      case 'predict':
+        return '';
+        break;
+
+      case 'mountain':
+        return '';
+        break;
+
+      case 'daggerAxe':
+        return '';
+        break;
+
+      case 'people':
+        return '';
+        break;
+
+      case 'heart':
+        return '';
+        break;
+
+      case 'day':
+        return '';
+        break;
+
+      case 'corpse':
+        return '';
+        break;
+
+      case 'wood':
+        return '';
+        break;
+
+      case 'fire':
+        return '';
+        break;
+
+      case 'earth':
+        return '';
+        break;
+
+      case 'bamboo':
+        return '';
+        break;
+
+      case 'ten':
+        return '';
+        break;
+
+      case 'big':
+        return '';
+        break;
+
+      case 'middle':
+        return '';
+        break;
+
+      case 'disaster':
+        return '';
+        break;
+
+      case 'gold':
+        return '';
+        break;
+
+      case 'female':
+        return '';
+        break;
+
+      case 'moon':
+        return '';
+        break;
+
+      case 'bow':
+        return '';
+        break;
+
+      case 'one':
+        return '';
+        break;
+    }
   }
 
   people() { //Ren
     // default: eye
+
+    switch(this.phrase) {
+      case 'hand':
+        return '';
+        break;
+
+      case 'field':
+        return '';
+        break;
+
+      case 'water':
+        return '';
+        break;
+
+      case 'mouth':
+        return '';
+        break;
+
+      case 'twenty':
+        return '';
+        break;
+
+      case 'predict':
+        return '';
+        break;
+
+      case 'mountain':
+        return '';
+        break;
+
+      case 'daggerAxe':
+        return '';
+        break;
+
+      case 'people':
+        return '';
+        break;
+
+      case 'heart':
+        return '';
+        break;
+
+      case 'day':
+        return '';
+        break;
+
+      case 'corpse':
+        return '';
+        break;
+
+      case 'wood':
+        return '';
+        break;
+
+      case 'fire':
+        return '';
+        break;
+
+      case 'earth':
+        return '';
+        break;
+
+      case 'bamboo':
+        return '';
+        break;
+
+      case 'ten':
+        return '';
+        break;
+
+      case 'big':
+        return '';
+        break;
+
+      case 'middle':
+        return '';
+        break;
+
+      case 'disaster':
+        return '';
+        break;
+
+      case 'gold':
+        return '';
+        break;
+
+      case 'female':
+        return '';
+        break;
+
+      case 'moon':
+        return '';
+        break;
+
+      case 'bow':
+        return '';
+        break;
+
+      case 'one':
+        return '';
+        break;
+    }
   }
 
   heart() { //Xin
     // default: dimple
+
+    switch(this.phrase) {
+      case 'hand':
+        return '';
+        break;
+
+      case 'field':
+        return '';
+        break;
+
+      case 'water':
+        return '';
+        break;
+
+      case 'mouth':
+        return '';
+        break;
+
+      case 'twenty':
+        return '';
+        break;
+
+      case 'predict':
+        return '';
+        break;
+
+      case 'mountain':
+        return '';
+        break;
+
+      case 'daggerAxe':
+        return '';
+        break;
+
+      case 'people':
+        return '';
+        break;
+
+      case 'heart':
+        return '';
+        break;
+
+      case 'day':
+        return '';
+        break;
+
+      case 'corpse':
+        return '';
+        break;
+
+      case 'wood':
+        return '';
+        break;
+
+      case 'fire':
+        return '';
+        break;
+
+      case 'earth':
+        return '';
+        break;
+
+      case 'bamboo':
+        return '';
+        break;
+
+      case 'ten':
+        return '';
+        break;
+
+      case 'big':
+        return '';
+        break;
+
+      case 'middle':
+        return '';
+        break;
+
+      case 'disaster':
+        return '';
+        break;
+
+      case 'gold':
+        return '';
+        break;
+
+      case 'female':
+        return '';
+        break;
+
+      case 'moon':
+        return '';
+        break;
+
+      case 'bow':
+        return '';
+        break;
+
+      case 'one':
+        return '';
+        break;
+    }
   }
 
   day() { //Ri
     // default: picture
+
+    switch(this.phrase) {
+      case 'hand':
+        return '';
+        break;
+
+      case 'field':
+        return '';
+        break;
+
+      case 'water':
+        return '';
+        break;
+
+      case 'mouth':
+        return '';
+        break;
+
+      case 'twenty':
+        return '';
+        break;
+
+      case 'predict':
+        return '';
+        break;
+
+      case 'mountain':
+        return '';
+        break;
+
+      case 'daggerAxe':
+        return '';
+        break;
+
+      case 'people':
+        return '';
+        break;
+
+      case 'heart':
+        return '';
+        break;
+
+      case 'day':
+        return '';
+        break;
+
+      case 'corpse':
+        return '';
+        break;
+
+      case 'wood':
+        return '';
+        break;
+
+      case 'fire':
+        return '';
+        break;
+
+      case 'earth':
+        return '';
+        break;
+
+      case 'bamboo':
+        return '';
+        break;
+
+      case 'ten':
+        return '';
+        break;
+
+      case 'big':
+        return '';
+        break;
+
+      case 'middle':
+        return '';
+        break;
+
+      case 'disaster':
+        return '';
+        break;
+
+      case 'gold':
+        return '';
+        break;
+
+      case 'female':
+        return '';
+        break;
+
+      case 'moon':
+        return '';
+        break;
+
+      case 'bow':
+        return '';
+        break;
+
+      case 'one':
+        return '';
+        break;
+    }
   }
 
   corpse() { //Shi
     // default: in
+
+    switch(this.phrase) {
+      case 'hand':
+        return '';
+        break;
+
+      case 'field':
+        return '';
+        break;
+
+      case 'water':
+        return '';
+        break;
+
+      case 'mouth':
+        return '';
+        break;
+
+      case 'twenty':
+        return '';
+        break;
+
+      case 'predict':
+        return '';
+        break;
+
+      case 'mountain':
+        return '';
+        break;
+
+      case 'daggerAxe':
+        return '';
+        break;
+
+      case 'people':
+        return '';
+        break;
+
+      case 'heart':
+        return '';
+        break;
+
+      case 'day':
+        return '';
+        break;
+
+      case 'corpse':
+        return '';
+        break;
+
+      case 'wood':
+        return '';
+        break;
+
+      case 'fire':
+        return '';
+        break;
+
+      case 'earth':
+        return '';
+        break;
+
+      case 'bamboo':
+        return '';
+        break;
+
+      case 'ten':
+        return '';
+        break;
+
+      case 'big':
+        return '';
+        break;
+
+      case 'middle':
+        return '';
+        break;
+
+      case 'disaster':
+        return '';
+        break;
+
+      case 'gold':
+        return '';
+        break;
+
+      case 'female':
+        return '';
+        break;
+
+      case 'moon':
+        return '';
+        break;
+
+      case 'bow':
+        return '';
+        break;
+
+      case 'one':
+        return '';
+        break;
+    }
   }
 
   wood() { //Mu
     // default: oh
+
+    switch(this.phrase) {
+      case 'hand':
+        return '';
+        break;
+
+      case 'field':
+        return '';
+        break;
+
+      case 'water':
+        return '';
+        break;
+
+      case 'mouth':
+        return '';
+        break;
+
+      case 'twenty':
+        return '';
+        break;
+
+      case 'predict':
+        return '';
+        break;
+
+      case 'mountain':
+        return '';
+        break;
+
+      case 'daggerAxe':
+        return '';
+        break;
+
+      case 'people':
+        return '';
+        break;
+
+      case 'heart':
+        return '';
+        break;
+
+      case 'day':
+        return '';
+        break;
+
+      case 'corpse':
+        return '';
+        break;
+
+      case 'wood':
+        return '';
+        break;
+
+      case 'fire':
+        return '';
+        break;
+
+      case 'earth':
+        return '';
+        break;
+
+      case 'bamboo':
+        return '';
+        break;
+
+      case 'ten':
+        return '';
+        break;
+
+      case 'big':
+        return '';
+        break;
+
+      case 'middle':
+        return '';
+        break;
+
+      case 'disaster':
+        return '';
+        break;
+
+      case 'gold':
+        return '';
+        break;
+
+      case 'female':
+        return '';
+        break;
+
+      case 'moon':
+        return '';
+        break;
+
+      case 'bow':
+        return '';
+        break;
+
+      case 'one':
+        return '';
+        break;
+    }
   }
 
   fire() { //Huo
     // default: hey
+
+    switch(this.phrase) {
+      case 'hand':
+        return '';
+        break;
+
+      case 'field':
+        return '';
+        break;
+
+      case 'water':
+        return '';
+        break;
+
+      case 'mouth':
+        return '';
+        break;
+
+      case 'twenty':
+        return '';
+        break;
+
+      case 'predict':
+        return '';
+        break;
+
+      case 'mountain':
+        return '';
+        break;
+
+      case 'daggerAxe':
+        return '';
+        break;
+
+      case 'people':
+        return '';
+        break;
+
+      case 'heart':
+        return '';
+        break;
+
+      case 'day':
+        return '';
+        break;
+
+      case 'corpse':
+        return '';
+        break;
+
+      case 'wood':
+        return '';
+        break;
+
+      case 'fire':
+        return '';
+        break;
+
+      case 'earth':
+        return '';
+        break;
+
+      case 'bamboo':
+        return '';
+        break;
+
+      case 'ten':
+        return '';
+        break;
+
+      case 'big':
+        return '';
+        break;
+
+      case 'middle':
+        return '';
+        break;
+
+      case 'disaster':
+        return '';
+        break;
+
+      case 'gold':
+        return '';
+        break;
+
+      case 'female':
+        return '';
+        break;
+
+      case 'moon':
+        return '';
+        break;
+
+      case 'bow':
+        return '';
+        break;
+
+      case 'one':
+        return '';
+        break;
+    }
   }
 
   earth() { //Tu
     // default: ho
+
+    switch(this.phrase) {
+      case 'hand':
+        return '';
+        break;
+
+      case 'field':
+        return '';
+        break;
+
+      case 'water':
+        return '';
+        break;
+
+      case 'mouth':
+        return '';
+        break;
+
+      case 'twenty':
+        return '';
+        break;
+
+      case 'predict':
+        return '';
+        break;
+
+      case 'mountain':
+        return '';
+        break;
+
+      case 'daggerAxe':
+        return '';
+        break;
+
+      case 'people':
+        return '';
+        break;
+
+      case 'heart':
+        return '';
+        break;
+
+      case 'day':
+        return '';
+        break;
+
+      case 'corpse':
+        return '';
+        break;
+
+      case 'wood':
+        return '';
+        break;
+
+      case 'fire':
+        return '';
+        break;
+
+      case 'earth':
+        return '';
+        break;
+
+      case 'bamboo':
+        return '';
+        break;
+
+      case 'ten':
+        return '';
+        break;
+
+      case 'big':
+        return '';
+        break;
+
+      case 'middle':
+        return '';
+        break;
+
+      case 'disaster':
+        return '';
+        break;
+
+      case 'gold':
+        return '';
+        break;
+
+      case 'female':
+        return '';
+        break;
+
+      case 'moon':
+        return '';
+        break;
+
+      case 'bow':
+        return '';
+        break;
+
+      case 'one':
+        return '';
+        break;
+    }
   }
 
   bamboo() { //Zhu
     // default: reactor
+
+    switch(this.phrase) {
+      case 'hand':
+        return '';
+        break;
+
+      case 'field':
+        return '';
+        break;
+
+      case 'water':
+        return '';
+        break;
+
+      case 'mouth':
+        return '';
+        break;
+
+      case 'twenty':
+        return '';
+        break;
+
+      case 'predict':
+        return '';
+        break;
+
+      case 'mountain':
+        return '';
+        break;
+
+      case 'daggerAxe':
+        return '';
+        break;
+
+      case 'people':
+        return '';
+        break;
+
+      case 'heart':
+        return '';
+        break;
+
+      case 'day':
+        return '';
+        break;
+
+      case 'corpse':
+        return '';
+        break;
+
+      case 'wood':
+        return '';
+        break;
+
+      case 'fire':
+        return '';
+        break;
+
+      case 'earth':
+        return '';
+        break;
+
+      case 'bamboo':
+        return '';
+        break;
+
+      case 'ten':
+        return '';
+        break;
+
+      case 'big':
+        return '';
+        break;
+
+      case 'middle':
+        return '';
+        break;
+
+      case 'disaster':
+        return '';
+        break;
+
+      case 'gold':
+        return '';
+        break;
+
+      case 'female':
+        return '';
+        break;
+
+      case 'moon':
+        return '';
+        break;
+
+      case 'bow':
+        return '';
+        break;
+
+      case 'one':
+        return '';
+        break;
+    }
   }
 
   ten() { //Shi
     // default: dimple
+
+    switch(this.phrase) {
+      case 'hand':
+        return '';
+        break;
+
+      case 'field':
+        return '';
+        break;
+
+      case 'water':
+        return '';
+        break;
+
+      case 'mouth':
+        return '';
+        break;
+
+      case 'twenty':
+        return '';
+        break;
+
+      case 'predict':
+        return '';
+        break;
+
+      case 'mountain':
+        return '';
+        break;
+
+      case 'daggerAxe':
+        return '';
+        break;
+
+      case 'people':
+        return '';
+        break;
+
+      case 'heart':
+        return '';
+        break;
+
+      case 'day':
+        return '';
+        break;
+
+      case 'corpse':
+        return '';
+        break;
+
+      case 'wood':
+        return '';
+        break;
+
+      case 'fire':
+        return '';
+        break;
+
+      case 'earth':
+        return '';
+        break;
+
+      case 'bamboo':
+        return '';
+        break;
+
+      case 'ten':
+        return '';
+        break;
+
+      case 'big':
+        return '';
+        break;
+
+      case 'middle':
+        return '';
+        break;
+
+      case 'disaster':
+        return '';
+        break;
+
+      case 'gold':
+        return '';
+        break;
+
+      case 'female':
+        return '';
+        break;
+
+      case 'moon':
+        return '';
+        break;
+
+      case 'bow':
+        return '';
+        break;
+
+      case 'one':
+        return '';
+        break;
+    }
   }
 
   big() { //Da
     // default: ma
+
+    switch(this.phrase) {
+      case 'hand':
+        return '';
+        break;
+
+      case 'field':
+        return '';
+        break;
+
+      case 'water':
+        return '';
+        break;
+
+      case 'mouth':
+        return '';
+        break;
+
+      case 'twenty':
+        return '';
+        break;
+
+      case 'predict':
+        return '';
+        break;
+
+      case 'mountain':
+        return '';
+        break;
+
+      case 'daggerAxe':
+        return '';
+        break;
+
+      case 'people':
+        return '';
+        break;
+
+      case 'heart':
+        return '';
+        break;
+
+      case 'day':
+        return '';
+        break;
+
+      case 'corpse':
+        return '';
+        break;
+
+      case 'wood':
+        return '';
+        break;
+
+      case 'fire':
+        return '';
+        break;
+
+      case 'earth':
+        return '';
+        break;
+
+      case 'bamboo':
+        return '';
+        break;
+
+      case 'ten':
+        return '';
+        break;
+
+      case 'big':
+        return '';
+        break;
+
+      case 'middle':
+        return '';
+        break;
+
+      case 'disaster':
+        return '';
+        break;
+
+      case 'gold':
+        return '';
+        break;
+
+      case 'female':
+        return '';
+        break;
+
+      case 'moon':
+        return '';
+        break;
+
+      case 'bow':
+        return '';
+        break;
+
+      case 'one':
+        return '';
+        break;
+    }
   }
 
   middle() { //Zhong
     // default: vinegar
+
+    switch(this.phrase) {
+      case 'hand':
+        return '';
+        break;
+
+      case 'field':
+        return '';
+        break;
+
+      case 'water':
+        return '';
+        break;
+
+      case 'mouth':
+        return '';
+        break;
+
+      case 'twenty':
+        return '';
+        break;
+
+      case 'predict':
+        return '';
+        break;
+
+      case 'mountain':
+        return '';
+        break;
+
+      case 'daggerAxe':
+        return '';
+        break;
+
+      case 'people':
+        return '';
+        break;
+
+      case 'heart':
+        return '';
+        break;
+
+      case 'day':
+        return '';
+        break;
+
+      case 'corpse':
+        return '';
+        break;
+
+      case 'wood':
+        return '';
+        break;
+
+      case 'fire':
+        return '';
+        break;
+
+      case 'earth':
+        return '';
+        break;
+
+      case 'bamboo':
+        return '';
+        break;
+
+      case 'ten':
+        return '';
+        break;
+
+      case 'big':
+        return '';
+        break;
+
+      case 'middle':
+        return '';
+        break;
+
+      case 'disaster':
+        return '';
+        break;
+
+      case 'gold':
+        return '';
+        break;
+
+      case 'female':
+        return '';
+        break;
+
+      case 'moon':
+        return '';
+        break;
+
+      case 'bow':
+        return '';
+        break;
+
+      case 'one':
+        return '';
+        break;
+    }
   }
 
   disaster() { //Nan
     // default: ru
+
+    switch(this.phrase) {
+      case 'hand':
+        return '';
+        break;
+
+      case 'field':
+        return '';
+        break;
+
+      case 'water':
+        return '';
+        break;
+
+      case 'mouth':
+        return '';
+        break;
+
+      case 'twenty':
+        return '';
+        break;
+
+      case 'predict':
+        return '';
+        break;
+
+      case 'mountain':
+        return '';
+        break;
+
+      case 'daggerAxe':
+        return '';
+        break;
+
+      case 'people':
+        return '';
+        break;
+
+      case 'heart':
+        return '';
+        break;
+
+      case 'day':
+        return '';
+        break;
+
+      case 'corpse':
+        return '';
+        break;
+
+      case 'wood':
+        return '';
+        break;
+
+      case 'fire':
+        return '';
+        break;
+
+      case 'earth':
+        return '';
+        break;
+
+      case 'bamboo':
+        return '';
+        break;
+
+      case 'ten':
+        return '';
+        break;
+
+      case 'big':
+        return '';
+        break;
+
+      case 'middle':
+        return '';
+        break;
+
+      case 'disaster':
+        return '';
+        break;
+
+      case 'gold':
+        return '';
+        break;
+
+      case 'female':
+        return '';
+        break;
+
+      case 'moon':
+        return '';
+        break;
+
+      case 'bow':
+        return '';
+        break;
+
+      case 'one':
+        return '';
+        break;
+    }
   }
 
   gold() { //Jin
     // default: ingredient
+
+    switch(this.phrase) {
+      case 'hand':
+        return '';
+        break;
+
+      case 'field':
+        return '';
+        break;
+
+      case 'water':
+        return '';
+        break;
+
+      case 'mouth':
+        return '';
+        break;
+
+      case 'twenty':
+        return '';
+        break;
+
+      case 'predict':
+        return '';
+        break;
+
+      case 'mountain':
+        return '';
+        break;
+
+      case 'daggerAxe':
+        return '';
+        break;
+
+      case 'people':
+        return '';
+        break;
+
+      case 'heart':
+        return '';
+        break;
+
+      case 'day':
+        return '';
+        break;
+
+      case 'corpse':
+        return '';
+        break;
+
+      case 'wood':
+        return '';
+        break;
+
+      case 'fire':
+        return '';
+        break;
+
+      case 'earth':
+        return '';
+        break;
+
+      case 'bamboo':
+        return '';
+        break;
+
+      case 'ten':
+        return '';
+        break;
+
+      case 'big':
+        return '';
+        break;
+
+      case 'middle':
+        return '';
+        break;
+
+      case 'disaster':
+        return '';
+        break;
+
+      case 'gold':
+        return '';
+        break;
+
+      case 'female':
+        return '';
+        break;
+
+      case 'moon':
+        return '';
+        break;
+
+      case 'bow':
+        return '';
+        break;
+
+      case 'one':
+        return '';
+        break;
+    }
   }
 
   female() { //Nu
     // default: hot water (👺)
+
+    switch(this.phrase) {
+      case 'hand':
+        return '';
+        break;
+
+      case 'field':
+        return '';
+        break;
+
+      case 'water':
+        return '';
+        break;
+
+      case 'mouth':
+        return '';
+        break;
+
+      case 'twenty':
+        return '';
+        break;
+
+      case 'predict':
+        return '';
+        break;
+
+      case 'mountain':
+        return '';
+        break;
+
+      case 'daggerAxe':
+        return '';
+        break;
+
+      case 'people':
+        return '';
+        break;
+
+      case 'heart':
+        return '';
+        break;
+
+      case 'day':
+        return '';
+        break;
+
+      case 'corpse':
+        return '';
+        break;
+
+      case 'wood':
+        return '';
+        break;
+
+      case 'fire':
+        return '';
+        break;
+
+      case 'earth':
+        return '';
+        break;
+
+      case 'bamboo':
+        return '';
+        break;
+
+      case 'ten':
+        return '';
+        break;
+
+      case 'big':
+        return '';
+        break;
+
+      case 'middle':
+        return '';
+        break;
+
+      case 'disaster':
+        return '';
+        break;
+
+      case 'gold':
+        return '';
+        break;
+
+      case 'female':
+        return '';
+        break;
+
+      case 'moon':
+        return '';
+        break;
+
+      case 'bow':
+        return '';
+        break;
+
+      case 'one':
+        return '';
+        break;
+    }
   }
 
   moon() { //Yue
     // default: fruit
+
+    switch(this.phrase) {
+      case 'hand':
+        return '';
+        break;
+
+      case 'field':
+        return '';
+        break;
+
+      case 'water':
+        return '';
+        break;
+
+      case 'mouth':
+        return '';
+        break;
+
+      case 'twenty':
+        return '';
+        break;
+
+      case 'predict':
+        return '';
+        break;
+
+      case 'mountain':
+        return '';
+        break;
+
+      case 'daggerAxe':
+        return '';
+        break;
+
+      case 'people':
+        return '';
+        break;
+
+      case 'heart':
+        return '';
+        break;
+
+      case 'day':
+        return '';
+        break;
+
+      case 'corpse':
+        return '';
+        break;
+
+      case 'wood':
+        return '';
+        break;
+
+      case 'fire':
+        return '';
+        break;
+
+      case 'earth':
+        return '';
+        break;
+
+      case 'bamboo':
+        return '';
+        break;
+
+      case 'ten':
+        return '';
+        break;
+
+      case 'big':
+        return '';
+        break;
+
+      case 'middle':
+        return '';
+        break;
+
+      case 'disaster':
+        return '';
+        break;
+
+      case 'gold':
+        return '';
+        break;
+
+      case 'female':
+        return '';
+        break;
+
+      case 'moon':
+        return '';
+        break;
+
+      case 'bow':
+        return '';
+        break;
+
+      case 'one':
+        return '';
+        break;
+    }
   }
 
   bow() { //Gong
     // default: nothing
+
+    switch(this.phrase) {
+      case 'hand':
+        return '';
+        break;
+
+      case 'field':
+        return '';
+        break;
+
+      case 'water':
+        return '';
+        break;
+
+      case 'mouth':
+        return '';
+        break;
+
+      case 'twenty':
+        return '';
+        break;
+
+      case 'predict':
+        return '';
+        break;
+
+      case 'mountain':
+        return '';
+        break;
+
+      case 'daggerAxe':
+        return '';
+        break;
+
+      case 'people':
+        return '';
+        break;
+
+      case 'heart':
+        return '';
+        break;
+
+      case 'day':
+        return '';
+        break;
+
+      case 'corpse':
+        return '';
+        break;
+
+      case 'wood':
+        return '';
+        break;
+
+      case 'fire':
+        return '';
+        break;
+
+      case 'earth':
+        return '';
+        break;
+
+      case 'bamboo':
+        return '';
+        break;
+
+      case 'ten':
+        return '';
+        break;
+
+      case 'big':
+        return '';
+        break;
+
+      case 'middle':
+        return '';
+        break;
+
+      case 'disaster':
+        return '';
+        break;
+
+      case 'gold':
+        return '';
+        break;
+
+      case 'female':
+        return '';
+        break;
+
+      case 'moon':
+        return '';
+        break;
+
+      case 'bow':
+        return '';
+        break;
+
+      case 'one':
+        return '';
+        break;
+    }
   }
 
   one() { //Yi
     // default: hand
+
+    switch(this.phrase) {
+      case 'hand':
+        return '';
+        break;
+
+      case 'field':
+        return '';
+        break;
+
+      case 'water':
+        return '';
+        break;
+
+      case 'mouth':
+        return '';
+        break;
+
+      case 'twenty':
+        return '';
+        break;
+
+      case 'predict':
+        return '';
+        break;
+
+      case 'mountain':
+        return '';
+        break;
+
+      case 'daggerAxe':
+        return '';
+        break;
+
+      case 'people':
+        return '';
+        break;
+
+      case 'heart':
+        return '';
+        break;
+
+      case 'day':
+        return '';
+        break;
+
+      case 'corpse':
+        return '';
+        break;
+
+      case 'wood':
+        return '';
+        break;
+
+      case 'fire':
+        return '';
+        break;
+
+      case 'earth':
+        return '';
+        break;
+
+      case 'bamboo':
+        return '';
+        break;
+
+      case 'ten':
+        return '';
+        break;
+
+      case 'big':
+        return '';
+        break;
+
+      case 'middle':
+        return '';
+        break;
+
+      case 'disaster':
+        return '';
+        break;
+
+      case 'gold':
+        return '';
+        break;
+
+      case 'female':
+        return '';
+        break;
+
+      case 'moon':
+        return '';
+        break;
+
+      case 'bow':
+        return '';
+        break;
+
+      case 'one':
+        return '';
+        break;
+    }
   }
 }
 
