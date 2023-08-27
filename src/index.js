@@ -1614,103 +1614,103 @@ class Lantern {
 
     switch(this.phrase) {
       case 'hand':
-        return '';
+        return 'ke';
         break;
 
       case 'field':
-        return '';
+        return 'ke';
         break;
 
       case 'water':
-        return '';
+        return 'u';
         break;
 
       case 'mouth':
-        return '';
+        return 'ze';
         break;
 
       case 'twenty':
-        return '';
+        return 'mu';
         break;
 
       case 'predict':
-        return '';
+        return 'ge';
         break;
 
       case 'mountain':
-        return '';
+        return 'to';
         break;
 
       case 'daggerAxe':
-        return '';
+        return 'go';
         break;
 
       case 'people':
-        return '';
+        return 'zo';
         break;
 
       case 'heart':
-        return '';
+        return 'po';
         break;
 
       case 'day':
-        return '';
+        return 'ko';
         break;
 
       case 'corpse':
-        return '';
+        return 'go';
         break;
 
       case 'wood':
-        return '';
+        return 'he';
         break;
 
       case 'fire':
-        return '';
+        return 'de';
         break;
 
       case 'earth':
-        return '';
+        return 'mo';
         break;
 
       case 'bamboo':
-        return '';
+        return 'po';
         break;
 
       case 'ten':
-        return '';
+        return 'zo';
         break;
 
       case 'big':
-        return '';
+        return 'te';
         break;
 
       case 'middle':
-        return '';
+        return 'me';
         break;
 
       case 'disaster':
-        return '';
+        return 'go';
         break;
 
       case 'gold':
-        return '';
+        return 'zu';
         break;
 
       case 'female':
-        return '';
+        return 'de';
         break;
 
       case 'moon':
-        return '';
+        return 'mo';
         break;
 
       case 'bow':
-        return '';
+        return 'do';
         break;
 
       case 'one':
-        return '';
+        return 'pe';
         break;
     }
   }
