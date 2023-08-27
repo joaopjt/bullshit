@@ -1,4 +1,5 @@
 const cangjie = require('./cangjie.json');
+const PepperSpray = require('pepper-spray');
 
 class Lantern {
   constructor(string, d = false) {
@@ -12,15 +13,17 @@ class Lantern {
 
   parse() {
     this.phrase = this.phrase.toLowerCase()
-      .normalize("NFD")
+      .normalize("NFD")      
+      .replaceAll(',', '')
+      .replaceAll('.', '')
+      .replaceAll('!', '')
+      .replaceAll('?', '')
+      .replaceAll(`'`, '')
+      .replaceAll(`"`, '')
       .replace(/[\u0300-\u036f]/g, "")
       .split(' ');
 
-    this.phrase.map((i) => {
-      let i += 1;
-
-
-    })
+    
   }
 
   translate() {
@@ -32,108 +35,105 @@ class Lantern {
     });
   }
 
-  hand() {
+  hand() { //Shou
 
   }
 
-  field() {
+  field() { //Tian
 
   }
 
-  water() {
+  water() { //Shui
 
   }
 
-  mouth() {
+  mouth() { //Kou
 
   }
 
-  twenty() {
+  twenty() { //Nian
 
   }
 
-  predict() {
+  predict() { //Bo
 
   }
 
-  mountain() {
+  mountain() { //Shan
 
   }
 
-  daggerAxe() {
+  daggerAxe() { //Ge
 
   }
 
-  people() {
+  people() { //Ren
 
   }
 
-  heart() {
+  heart() { //Xin
 
   }
 
-  day() {
+  day() { //Ri
 
   }
 
-  corpse() {
+  corpse() { //Shi
 
   }
 
-  wood() {
+  wood() { //Mu
 
   }
 
-  fire() {
+  fire() { //Huo
 
   }
 
-  earth() {
+  earth() { //Tu
 
   }
 
-  bamboo() {
+  bamboo() { //Zhu
 
   }
 
-  ten() {
+  ten() { //Shi
 
   }
 
-  big() {
+  big() { //Da
 
   }
 
-  middle() {
+  middle() { //Zhong
 
   }
 
-  disaster() {
+  disaster() { //Nan
 
   }
 
-  gold() {
+  gold() { //Jin
 
   }
 
-  female() {
+  female() { //Nu
 
   }
 
-  moon() {
+  moon() { //Yue
 
   }
 
-  bow() {
+  bow() { //Gong
 
   }
 
-  one() {
+  one() { //Yi
 
   }
-
-
-
 }
 
 module.exports = Lantern;
