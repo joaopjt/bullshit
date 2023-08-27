@@ -660,103 +660,103 @@ class Lantern {
 
     switch(this.phrase) {
       case 'hand':
-        return '';
+        return 'za';
         break;
 
       case 'field':
-        return '';
+        return 'i';
         break;
 
       case 'water':
-        return '';
+        return 'wi';
         break;
 
       case 'mouth':
-        return '';
+        return 'u';
         break;
 
       case 'twenty':
-        return '';
+        return 'tsu';
         break;
 
       case 'predict':
-        return '';
+        return 'ru';
         break;
 
       case 'mountain':
-        return '';
+        return 'gu';
         break;
 
       case 'daggerAxe':
-        return '';
+        return 'fu';
         break;
 
       case 'people':
-        return '';
+        return 'gu';
         break;
 
       case 'heart':
-        return '';
+        return 'bu';
         break;
 
       case 'day':
-        return '';
+        return 'mi';
         break;
 
       case 'corpse':
-        return '';
+        return 'nu';
         break;
 
       case 'wood':
-        return '';
+        return 'ru';
         break;
 
       case 'fire':
-        return '';
+        return 'gu';
         break;
 
       case 'earth':
-        return '';
+        return 'pa';
         break;
 
       case 'bamboo':
-        return '';
+        return 'tsu';
         break;
 
       case 'ten':
-        return '';
+        return 'mu';
         break;
 
       case 'big':
-        return '';
+        return 'yu';
         break;
 
       case 'middle':
-        return '';
+        return 'ri';
         break;
 
       case 'disaster':
-        return '';
+        return 'wi';
         break;
 
       case 'gold':
-        return '';
+        return 'bi';
         break;
 
       case 'female':
-        return '';
+        return 'yu';
         break;
 
       case 'moon':
-        return '';
+        return 'do';
         break;
 
       case 'bow':
-        return '';
+        return 'de';
         break;
 
       case 'one':
-        return '';
+        return 'po';
         break;
     }
   }
