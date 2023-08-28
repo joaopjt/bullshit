@@ -48,7 +48,7 @@ class Lantern {
     this.phrase.forEach((part) => {
       let result = this[cangjie[part[0].wide]].call(this, part);
 
-      this.result.push({ word: hiragana[result], _children: part });
+      this.result.push({ word: hiragana[result], wide: result, _children: part });
     });
   }
 
