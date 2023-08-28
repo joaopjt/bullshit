@@ -1852,9 +1852,6 @@ class Lantern {
       case 'one':
         return 'zo';
         break;
-      
-      default: 
-        return 'po';
     }
   }
 
@@ -1960,9 +1957,6 @@ class Lantern {
       case 'one':
         return 'gu';
         break;
-
-      default: 
-        return 'a';
     }
   }
 
@@ -2069,9 +2063,6 @@ class Lantern {
       case 'one':
         return 'ho';
         break;
-
-      default:
-        return 'su';
     }
   }
 
