@@ -15,7 +15,8 @@ class Lantern {
   parse() {
     let p = [];
 
-    this.phrase = this.phrase.split(/[.,!?]/gm).filter(w => w.length);
+    this.phrase = this.phrase.split(/[.!?]/gm).filter(w => w.length);
+    this.phrase = this.phrase.split(/[,]/gm).filter(w => w.length);
 
     this.phrase.forEach((part) => {
       let i = 1;
