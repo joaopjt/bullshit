@@ -1,4 +1,5 @@
 const cangjie = require('./cangjie.json');
+const hiragana = require('./hiragana.json');
 const { PepperSpray } = require('pepper-spray');
 
 class Lantern {
@@ -44,9 +45,13 @@ class Lantern {
   translate() {
     console.log(this.phrase);
 
-    this.phrase.forEach((w) => {
-      this[cangjie[w[0].wide]].call(this, w);  
+    this.phrase.forEach((part) => {
+      let result = this[cangjie[part[0].wide]].call(this, part);
+
+      this.result.push({ word: hiragana[result], _children: part });
     });
+
+    console.log(this.result);
   }
 
   hand(word) { //Shou
@@ -580,7 +585,7 @@ class Lantern {
   }
 
   predict(word) { //Bo
-    if(word.length === 1) return ''; // default: in
+    if(word.length === 1) return 'de'; // default: in
 
     switch(cangjie[word[1].wide]) {
       case 'hand':
