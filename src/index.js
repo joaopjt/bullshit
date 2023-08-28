@@ -1,5 +1,5 @@
 const cangjie = require('./cangjie.json');
-const PepperSpray = require('pepper-spray');
+const { PepperSpray } = require('pepper-spray');
 
 class Lantern {
   constructor(string, d = false) {
@@ -12,17 +12,47 @@ class Lantern {
   }
 
   parse() {
-    this.phrase = this.phrase.split(/[.,!?]/gm);
+    let p = [];
+
+    this.phrase = this.phrase.split(/[.,!?]/gm).filter(w => w.length);
+
+    this.phrase.forEach((part) => {
+      let i = 1;
+      let partArray = [];
+
+      part = part.trim();
+      
+      let _part = part.split(' ');
+      _part.forEach((word, j) => {
+        partArray.push(new PepperSpray(word).result[0]);
+
+        if (i === 3 || j === _part.length - 1) {
+          i = 1;
+          
+          p.push(partArray);
+
+          partArray = [];
+        } else {
+          i++;  
+        }
+      });
+    });
+
+    this.phrase = p;
   }
 
   translate() {
+    console.log(this.phrase);
 
+    this.phrase.forEach((w) => {
+      this[cangjie[w[0].wide]].call(this, w);  
+    });
   }
 
-  hand() { //Shou
-    // default: (old mc donald had a fart, fart fart fart fart fart)
+  hand(word) { //Shou
+    if(word.length === 1) return 'he'; // default: (old mc donald had a fart, fart fart fart fart fart)
 
-    switch(this.phrase) {
+    switch(cangjie[word[1].wide]) {
       case 'hand':
         return 'ki';
         break;
@@ -125,10 +155,10 @@ class Lantern {
     }
   }
 
-  field() { //Tian
-    // default: eye
+  field(word) { //Tian
+    if(word.length === 1) return 'me'; // default: eye
 
-    switch(this.phrase) {
+    switch(cangjie[word[1].wide]) {
       case 'hand':
         return 'ko';
         break;
@@ -231,10 +261,10 @@ class Lantern {
     }
   }
 
-  water() { //Shui
-    // default: too
+  water(word) { //Shui
+    if(word.length === 1) return 'mo'; // default: too
 
-    switch(this.phrase) {
+    switch(cangjie[word[1].wide]) {
       case 'hand':
         return 'shi';
         break;
@@ -337,10 +367,10 @@ class Lantern {
     }
   }
 
-  mouth() { //Kou
-    // default: vinegar
+  mouth(word) { //Kou
+    if(word.length === 1) return 'su'; // default: vinegar
 
-    switch(this.phrase) {
+    switch(cangjie[word[1].wide]) {
       case 'hand':
         return 'wo';
         break;
@@ -443,10 +473,10 @@ class Lantern {
     }
   }
 
-  twenty() { //Nian
-    // default: hand
+  twenty(word) { //Nian
+    if(word.length === 1) return 'te'; // default: hand
 
-    switch(this.phrase) {
+    switch(cangjie[word[1].wide]) {
       case 'hand':
         return 'e';
         break;
@@ -549,10 +579,10 @@ class Lantern {
     }
   }
 
-  predict() { //Bo
-    // default: in
+  predict(word) { //Bo
+    if(word.length === 1) return ''; // default: in
 
-    switch(this.phrase) {
+    switch(cangjie[word[1].wide]) {
       case 'hand':
         return 'mo';
         break;
@@ -655,10 +685,10 @@ class Lantern {
     }
   }
 
-  mountain() { //Shan
-    // default: zo
+  mountain(word) { //Shan
+    if(word.length === 1) return ''; // default: zo
 
-    switch(this.phrase) {
+    switch(cangjie[word[1].wide]) {
       case 'hand':
         return 'za';
         break;
@@ -761,10 +791,10 @@ class Lantern {
     }
   }
 
-  daggerAxe() { //Ge
-    // default: degree
+  daggerAxe(word) { //Ge
+    if(word.length === 1) return ''; // default: degree
 
-    switch(this.phrase) {
+    switch(cangjie[word[1].wide]) {
       case 'hand':
         return 'gi';
         break;
@@ -867,10 +897,10 @@ class Lantern {
     }
   }
 
-  people() { //Ren
-    // default: eye
+  people(word) { //Ren
+    if(word.length === 1) return ''; // default: eye
 
-    switch(this.phrase) {
+    switch(cangjie[word[1].wide]) {
       case 'hand':
         return 'sa';
         break;
@@ -973,10 +1003,10 @@ class Lantern {
     }
   }
 
-  heart() { //Xin
-    // default: dimple
+  heart(word) { //Xin
+    if(word.length === 1) return ''; // default: dimple
 
-    switch(this.phrase) {
+    switch(cangjie[word[1].wide]) {
       case 'hand':
         return 'yu';
         break;
@@ -1079,10 +1109,10 @@ class Lantern {
     }
   }
 
-  day() { //Ri
-    // default: picture
+  day(word) { //Ri
+    if(word.length === 1) return ''; // default: picture
 
-    switch(this.phrase) {
+    switch(cangjie[word[1].wide]) {
       case 'hand':
         return 'ma';
         break;
@@ -1185,10 +1215,10 @@ class Lantern {
     }
   }
 
-  corpse() { //Shi
-    // default: in
+  corpse(word) { //Shi
+    if(word.length === 1) return ''; // default: in
 
-    switch(this.phrase) {
+    switch(cangjie[word[1].wide]) {
       case 'hand':
         return 'te';
         break;
@@ -1291,10 +1321,10 @@ class Lantern {
     }
   }
 
-  wood() { //Mu
-    // default: oh
+  wood(word) { //Mu
+    if(word.length === 1) return ''; // default: oh
 
-    switch(this.phrase) {
+    switch(cangjie[word[1].wide]) {
       case 'hand':
         return 'na';
         break;
@@ -1397,10 +1427,10 @@ class Lantern {
     }
   }
 
-  fire() { //Huo
-    // default: hey
+  fire(word) { //Huo
+    if(word.length === 1) return ''; // default: hey
 
-    switch(this.phrase) {
+    switch(cangjie[word[1].wide]) {
       case 'hand':
         return 'he';
         break;
@@ -1503,10 +1533,10 @@ class Lantern {
     }
   }
 
-  earth() { //Tu
-    // default: ho
+  earth(word) { //Tu
+    if(word.length === 1) return ''; // default: ho
 
-    switch(this.phrase) {
+    switch(cangjie[word[1].wide]) {
       case 'hand':
         return 'yu';
         break;
@@ -1609,10 +1639,10 @@ class Lantern {
     }
   }
 
-  bamboo() { //Zhu
-    // default: reactor
+  bamboo(word) { //Zhu
+    if(word.length === 1) return ''; // default: reactor
 
-    switch(this.phrase) {
+    switch(cangjie[word[1].wide]) {
       case 'hand':
         return 'ke';
         break;
@@ -1715,10 +1745,10 @@ class Lantern {
     }
   }
 
-  ten() { //Shi
-    // default: dimple
+  ten(word) { //Shi
+    if(word.length === 1) return ''; // default: dimple
 
-    switch(this.phrase) {
+    switch(cangjie[word[1].wide]) {
       case 'hand':
         return 'gu';
         break;
@@ -1824,9 +1854,9 @@ class Lantern {
     }
   }
 
-  big() { //Da
-
-    switch(this.phrase) {
+  big(word) { //Dalet 
+    if(word.length === 1) return ''; // default: a
+    switch(cangjie[word[1].wide]) {
       case 'hand':
         return 'i';
         break;
@@ -1932,10 +1962,10 @@ class Lantern {
     }
   }
 
-  middle() { //Zhong
-    // default: vinegar
+  middle(word) { //Zhong
+    if(word.length === 1) return ''; // default: vinegar
 
-    switch(this.phrase) {
+    switch(cangjie[word[1].wide]) {
       case 'hand':
         return 'pa';
         break;
@@ -2041,10 +2071,10 @@ class Lantern {
     }
   }
 
-  disaster() { //Nan
-    // default: ru
+  disaster(word) { //Nan
+    if(word.length === 1) return ''; // default: ru
 
-    switch(this.phrase) {
+    switch(cangjie[word[1].wide]) {
       case 'hand':
         return 'yo';
         break;
@@ -2147,10 +2177,10 @@ class Lantern {
     }
   }
 
-  gold() { //Jin
-    // default: ingredient
+  gold(word) { //Jin
+    if(word.length === 1) return ''; // default: ingredient
 
-    switch(this.phrase) {
+    switch(cangjie[word[1].wide]) {
       case 'hand':
         return 'to';
         break;
@@ -2253,10 +2283,10 @@ class Lantern {
     }
   }
 
-  female() { //Nu
-    // default: hot water (👺)
+  female(word) { //Nu
+    if(word.length === 1) return ''; // default: hot water (👺)
 
-    switch(this.phrase) {
+    switch(cangjie[word[1].wide]) {
       case 'hand':
         return 'shi';
         break;
@@ -2359,10 +2389,10 @@ class Lantern {
     }
   }
 
-  moon() { //Yue
-    // default: fruit
+  moon(word) { //Yue
+    if(word.length === 1) return ''; // default: fruit
 
-    switch(this.phrase) {
+    switch(cangjie[word[1].wide]) {
       case 'hand':
         return 'ma';
         break;
@@ -2465,10 +2495,10 @@ class Lantern {
     }
   }
 
-  bow() { //Gong
-    // default: nothing
+  bow(word) { //Gong
+    if(word.length === 1) return ''; // default: nothing
 
-    switch(this.phrase) {
+    switch(cangjie[word[1].wide]) {
       case 'hand':
         return 'za';
         break;
@@ -2571,10 +2601,10 @@ class Lantern {
     }
   }
 
-  one() { //Yi
-    // default: hand
+  one(word) { //Yi
+    if(word.length === 1) return ''; // default: hand
 
-    switch(this.phrase) {
+    switch(cangjie[word[1].wide]) {
       case 'hand':
         return 'do';
         break;
